@@ -8,8 +8,8 @@ function Paddle:init()
     --velocity which starts with value 0
     self.dx = 0
 
-    self.height = 64
-    self.width = 16
+    self.width = 64
+    self.height = 16
 
     self.skin = 1
     
@@ -30,7 +30,7 @@ function Paddle:update(dt)
     if self.dx < 0 then
         self.x = math.max(0, self.x + self.dx * dt)
     else
-        self.x = math.min(VIRTUAL_WIDTH - self.width - 47, self.x + self.dx * dt)
+        self.x = math.min(VIRTUAL_WIDTH - self.width, self.x + self.dx * dt)
     end
 end
 

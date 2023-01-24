@@ -15,7 +15,7 @@ function StateMachine:change(stateName, enterParams)
     assert(self.states[stateName]) -- making sure that the stat exists
     self.current:exit()
     self.current = self.states[stateName]()
-    self.current:enter(enterParams)
+    -- self.current:enter(enterParams)
 end
 
 function StateMachine:update(dt)
