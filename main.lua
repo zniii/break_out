@@ -28,7 +28,8 @@ function love.load()
 
     gFrames = {
         ["paddles"] = GenerateQuadsPaddle(gTextures['main']),
-        ["ball"] = GenerateQuadsBall(gTextures['main'])
+        ["ball"] = GenerateQuadsBall(gTextures['main']),
+        ['brick'] = GenerateQuadsBrick(gTextures['main'])
     }
 
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
